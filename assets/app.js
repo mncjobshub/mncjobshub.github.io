@@ -7,7 +7,7 @@
 
   var CONFIG = {
     siteName: "MNC JobsHub",
-    siteUrl: "https://www.yourdomain.in",              // set this after connecting your custom domain (no trailing slash)
+    siteUrl: "https://mncjobshub.github.io",              // set this after connecting your custom domain (no trailing slash)
     telegramUrl: "https://t.me/datajobsArbaz",
     instagramUrl: "https://www.instagram.com/sqlwitharbaz",
     youtubeUrl: "https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg",
