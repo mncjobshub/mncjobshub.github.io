@@ -1,0 +1,90 @@
+title: SQL Interview Questions for Data Analyst Freshers (With Answers)
+description: The SQL interview questions data analyst freshers get asked most often, with short answers and example queries for joins, GROUP BY, window functions and NULL handling.
+date: 2026-11-25
+---
+<p>SQL is the first skill most data analyst interviews test. The questions below come up again and again for fresher roles. Practise each one on a real table instead of only reading the answer, and learn to explain your query out loud.</p>
+
+<h2>1. What is the difference between WHERE and HAVING?</h2>
+<p><code>WHERE</code> filters rows before grouping. <code>HAVING</code> filters groups after <code>GROUP BY</code> and can use aggregate functions.</p>
+<pre><code>SELECT department, COUNT(*) AS employees
+FROM employees
+WHERE status = 'active'
+GROUP BY department
+HAVING COUNT(*) &gt; 10;</code></pre>
+
+<h2>2. Explain the different types of JOIN</h2>
+<ul>
+  <li><strong>INNER JOIN</strong> returns only rows that match in both tables.</li>
+  <li><strong>LEFT JOIN</strong> returns all rows from the left table and the matching rows from the right; unmatched right columns are NULL.</li>
+  <li><strong>RIGHT JOIN</strong> is the mirror image of LEFT JOIN.</li>
+  <li><strong>FULL OUTER JOIN</strong> returns all rows from both tables, matched where possible.</li>
+</ul>
+<p>A common follow-up: "find customers who never placed an order". Use a LEFT JOIN and filter where the right side is NULL.</p>
+<pre><code>SELECT c.customer_id, c.name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.order_id IS NULL;</code></pre>
+
+<h2>3. How do you find duplicate records?</h2>
+<pre><code>SELECT email, COUNT(*) AS cnt
+FROM users
+GROUP BY email
+HAVING COUNT(*) &gt; 1;</code></pre>
+
+<h2>4. How do you find the second highest salary?</h2>
+<p>Using a subquery:</p>
+<pre><code>SELECT MAX(salary) AS second_highest
+FROM employees
+WHERE salary &lt; (SELECT MAX(salary) FROM employees);</code></pre>
+<p>Using a window function, which also works for the Nth highest:</p>
+<pre><code>SELECT salary
+FROM (
+  SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+  FROM employees
+) t
+WHERE rnk = 2;</code></pre>
+
+<h2>5. What is the difference between RANK, DENSE_RANK and ROW_NUMBER?</h2>
+<ul>
+  <li><strong>ROW_NUMBER</strong> gives a unique number to every row, even when values tie.</li>
+  <li><strong>RANK</strong> gives tied rows the same rank and leaves gaps after them (1, 1, 3).</li>
+  <li><strong>DENSE_RANK</strong> gives tied rows the same rank without gaps (1, 1, 2).</li>
+</ul>
+
+<h2>6. How does SQL handle NULL values?</h2>
+<p>NULL means unknown, so <code>NULL = NULL</code> is not true. Use <code>IS NULL</code> or <code>IS NOT NULL</code>. Use <code>COALESCE</code> to replace NULL with a default value.</p>
+<pre><code>SELECT name, COALESCE(phone, 'not provided') AS phone
+FROM customers;</code></pre>
+
+<h2>7. What is the difference between UNION and UNION ALL?</h2>
+<p><code>UNION</code> removes duplicate rows from the combined result. <code>UNION ALL</code> keeps all rows and is usually faster because it skips the duplicate check.</p>
+
+<h2>8. What is a CTE and when do you use it?</h2>
+<p>A common table expression (<code>WITH</code> clause) gives a name to a temporary result so a long query becomes easier to read and reuse.</p>
+<pre><code>WITH monthly AS (
+  SELECT DATE_TRUNC('month', order_date) AS month, SUM(amount) AS revenue
+  FROM orders
+  GROUP BY 1
+)
+SELECT month, revenue
+FROM monthly
+ORDER BY month;</code></pre>
+<p>Date functions differ between databases, so be ready to mention the function for the database used by the employer.</p>
+
+<h2>9. How do you calculate a running total?</h2>
+<pre><code>SELECT order_date,
+       amount,
+       SUM(amount) OVER (ORDER BY order_date) AS running_total
+FROM orders;</code></pre>
+
+<h2>10. What is the difference between a primary key and a foreign key?</h2>
+<p>A primary key uniquely identifies each row in a table and cannot be NULL. A foreign key is a column that refers to the primary key of another table and keeps the relationship between the two tables consistent.</p>
+
+<h2>How to prepare</h2>
+<ul>
+  <li>Practise on real tables with a few thousand rows, not only tiny examples.</li>
+  <li>Say your approach aloud before you write the query: which tables, which join, what grouping.</li>
+  <li>Learn to check your result: row counts before and after a join, and whether duplicates appeared.</li>
+  <li>Prepare one project where you used SQL to answer a business question, and explain the insight you found.</li>
+</ul>
+<p>Looking for roles that ask for these skills? Browse current <a href="../sql-jobs.html">SQL jobs</a> and <a href="../data-analyst-jobs.html">data analyst jobs</a>.</p>

@@ -1,0 +1,13 @@
+{
+  "name": "MNC JobsHub",
+  "siteUrl": "https://mncjobshub.github.io",
+  "telegram": "https://t.me/datajobsArbaz",
+  "instagram": "https://www.instagram.com/sqlwitharbaz",
+  "youtube": "https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg",
+  "email": "mncjobshub.official@gmail.com",
+  "newBadgeDays": 3,
+  "resources": [
+    { "title": "Free ATS Resume Score Checker", "desc": "Check your resume score before you apply", "url": "https://roastcv.in", "sponsored": false },
+    { "title": "YouTube: SQL & Data Analytics", "desc": "Free tutorials and interview preparation", "url": "https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg", "sponsored": false }
+  ]
+}

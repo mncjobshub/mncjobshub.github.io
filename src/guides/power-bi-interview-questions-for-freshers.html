@@ -1,0 +1,59 @@
+title: Power BI Interview Questions for Freshers (With Answers)
+description: Common Power BI interview questions for freshers with clear answers: Power Query, DAX, data modelling, measures vs calculated columns, import vs DirectQuery and row-level security.
+date: 2026-11-25
+---
+<p>Power BI interviews for fresher analyst and developer roles usually cover data cleaning, data modelling and DAX basics. Here are the questions that come up most, with short answers you can adapt in your own words.</p>
+
+<h2>1. What is Power BI and what are its main components?</h2>
+<p>Power BI is a business intelligence tool for connecting to data, modelling it and building interactive reports. The main components are <strong>Power BI Desktop</strong> (where you build reports), the <strong>Power BI Service</strong> (the online service for publishing and sharing) and the mobile apps for viewing reports.</p>
+
+<h2>2. What is the difference between Power Query and DAX?</h2>
+<p><strong>Power Query</strong> is used to connect to and clean or reshape data before it is loaded, for example removing duplicates, changing data types or merging tables. <strong>DAX</strong> (Data Analysis Expressions) is a formula language used after loading to create measures and calculated columns for analysis.</p>
+
+<h2>3. What is the difference between a calculated column and a measure?</h2>
+<ul>
+  <li>A <strong>calculated column</strong> is computed row by row when data is loaded and is stored in the model.</li>
+  <li>A <strong>measure</strong> is computed at query time, based on the filters and visuals in use, and is not stored per row.</li>
+</ul>
+<p>Use measures for aggregations such as totals and ratios, and calculated columns when you need a value for each row to filter or group by.</p>
+
+<h2>4. Explain row context and filter context</h2>
+<p>Row context means "the current row" and is created in calculated columns and iterator functions such as <code>SUMX</code>. Filter context is the set of filters applied by slicers, visuals, rows and columns of a table, and by functions like <code>CALCULATE</code>.</p>
+
+<h2>5. What does CALCULATE do?</h2>
+<p><code>CALCULATE</code> evaluates an expression after modifying the filter context. It is the most important DAX function.</p>
+<pre><code>Total Sales = SUM(Sales[Amount])
+
+Sales LY =
+CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
+
+Sales Growth % =
+DIVIDE([Total Sales] - [Sales LY], [Sales LY])</code></pre>
+<p>Using <code>DIVIDE</code> instead of the <code>/</code> operator avoids errors when the denominator is zero.</p>
+
+<h2>6. What is a star schema and why is it recommended?</h2>
+<p>A star schema has one central <strong>fact table</strong> with numeric events such as sales, connected to <strong>dimension tables</strong> such as date, product and customer. It is easy to understand, performs well and gives predictable filtering, so it is the recommended design for Power BI models.</p>
+
+<h2>7. What is the difference between Import mode and DirectQuery?</h2>
+<ul>
+  <li><strong>Import</strong> loads a copy of the data into Power BI. It is fast and supports the full range of features, but the data must be refreshed.</li>
+  <li><strong>DirectQuery</strong> keeps the data in the source and sends queries to it when you use the report. Data is more current, but performance depends on the source and some features are limited.</li>
+</ul>
+
+<h2>8. What types of relationships exist in Power BI?</h2>
+<p>One-to-many is the most common, followed by one-to-one and many-to-many. Filters usually flow from the "one" side to the "many" side. Cross-filter direction can be single or both; use "both" carefully because it can produce unexpected results.</p>
+
+<h2>9. What is row-level security (RLS)?</h2>
+<p>RLS restricts which rows of data a user can see. You define roles with DAX filter rules in Power BI Desktop, for example a manager seeing only their region, and then assign users to these roles in the Power BI Service.</p>
+
+<h2>10. How do you improve report performance?</h2>
+<ul>
+  <li>Remove columns and rows you do not need.</li>
+  <li>Use a star schema and avoid unnecessary many-to-many relationships.</li>
+  <li>Prefer measures over heavy calculated columns.</li>
+  <li>Limit the number of visuals on a page.</li>
+</ul>
+
+<h2>How to prepare</h2>
+<p>Build one end-to-end dashboard from a public dataset: clean it in Power Query, model it as a star schema, write a few DAX measures and design clear pages. In the interview, walk through your choices and the insight the dashboard gives. Also revise SQL, because most Power BI roles expect it; see our <a href="sql-interview-questions-for-data-analyst-freshers.html">SQL interview guide</a>.</p>
+<p>See current <a href="../power-bi-jobs.html">Power BI jobs</a> and <a href="../data-analyst-jobs.html">data analyst jobs</a>.</p>
