@@ -265,7 +265,15 @@ def header(prefix, active=""):
 
 
 def popular_links(prefix):
-    top = sorted(LIVE_CATS, key=lambda c: -len(c["jobs"]))[:6]
+    # Fixed order from src/site.json ("popularCategories") so adding a job does not change every page's footer.
+    by_slug = {c["slug"]: c for c in LIVE_CATS}
+    top = [by_slug[s] for s in SITE.get("popularCategories", []) if s in by_slug]
+    for c in sorted(LIVE_CATS, key=lambda c: -len(c["jobs"])):
+        if len(top) >= 6:
+            break
+        if c not in top:
+            top.append(c)
+    top = top[:6]
     return "".join('<li><a href="%s%s.html">%s</a></li>' % (prefix, c["slug"], esc(c["h1"])) for c in top)
 
 
