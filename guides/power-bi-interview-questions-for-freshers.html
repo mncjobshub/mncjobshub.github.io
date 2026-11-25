@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Power BI Interview Questions for Freshers (With Answers)</title>
+  <meta name="description" content="Common Power BI interview questions for freshers with clear answers: Power Query, DAX, data modelling, measures vs calculated columns, import vs DirectQuery and row-level security.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mncjobshub.github.io/guides/power-bi-interview-questions-for-freshers.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MNC JobsHub">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Power BI Interview Questions for Freshers (With Answers)">
+  <meta property="og:description" content="Common Power BI interview questions for freshers with clear answers: Power Query, DAX, data modelling, measures vs calculated columns, import vs DirectQuery and row-level security.">
+  <meta property="og:url" content="https://mncjobshub.github.io/guides/power-bi-interview-questions-for-freshers.html">
+  <meta property="og:image" content="https://mncjobshub.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Power BI Interview Questions for Freshers (With Answers)">
+  <meta name="twitter:description" content="Common Power BI interview questions for freshers with clear answers: Power Query, DAX, data modelling, measures vs calculated columns, import vs DirectQuery and row-level security.">
+  <meta name="twitter:image" content="https://mncjobshub.github.io/assets/og-image.png">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- GOOGLE ADSENSE: after approval, uncomment and add your publisher ID
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Power BI Interview Questions for Freshers (With Answers)", "description": "Common Power BI interview questions for freshers with clear answers: Power Query, DAX, data modelling, measures vs calculated columns, import vs DirectQuery and row-level security.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "inLanguage": "en-IN", "author": {"@type": "Organization", "name": "MNC JobsHub"}, "publisher": {"@type": "Organization", "name": "MNC JobsHub", "logo": {"@type": "ImageObject", "url": "https://mncjobshub.github.io/assets/logo-512.png"}}, "mainEntityOfPage": "https://mncjobshub.github.io/guides/power-bi-interview-questions-for-freshers.html"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mncjobshub.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://mncjobshub.github.io/guides/index.html"}, {"@type": "ListItem", "position": 3, "name": "Power BI Interview Questions for Freshers (With Answers)", "item": "https://mncjobshub.github.io/guides/power-bi-interview-questions-for-freshers.html"}]}</script>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="MNC JobsHub home"><img class="brand-mark" src="../assets/logo-mark.svg" alt="" width="36" height="36"><span>mncjobs<b>hub</b></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../guides/index.html" class="active">Guides</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../privacy-policy.html">Privacy</a>
+        <a class="btn btn-tg btn-sm" data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Join Telegram</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><h1>Power BI Interview Questions for Freshers (With Answers)</h1><p>Published 25 Nov 2026 by MNC JobsHub</p></div></section>
+    <div class="container section">
+      <div class="breadcrumb" style="margin-top:0"><a href="../index.html">Home</a> &rsaquo; <a href="index.html">Guides</a></div>
+      <article class="prose panel">
+        <p>Power BI interviews for fresher analyst and developer roles usually cover data cleaning, data modelling and DAX basics. Here are the questions that come up most, with short answers you can adapt in your own words.</p>
+
+<h2>1. What is Power BI and what are its main components?</h2>
+<p>Power BI is a business intelligence tool for connecting to data, modelling it and building interactive reports. The main components are <strong>Power BI Desktop</strong> (where you build reports), the <strong>Power BI Service</strong> (the online service for publishing and sharing) and the mobile apps for viewing reports.</p>
+
+<h2>2. What is the difference between Power Query and DAX?</h2>
+<p><strong>Power Query</strong> is used to connect to and clean or reshape data before it is loaded, for example removing duplicates, changing data types or merging tables. <strong>DAX</strong> (Data Analysis Expressions) is a formula language used after loading to create measures and calculated columns for analysis.</p>
+
+<h2>3. What is the difference between a calculated column and a measure?</h2>
+<ul>
+  <li>A <strong>calculated column</strong> is computed row by row when data is loaded and is stored in the model.</li>
+  <li>A <strong>measure</strong> is computed at query time, based on the filters and visuals in use, and is not stored per row.</li>
+</ul>
+<p>Use measures for aggregations such as totals and ratios, and calculated columns when you need a value for each row to filter or group by.</p>
+
+<h2>4. Explain row context and filter context</h2>
+<p>Row context means "the current row" and is created in calculated columns and iterator functions such as <code>SUMX</code>. Filter context is the set of filters applied by slicers, visuals, rows and columns of a table, and by functions like <code>CALCULATE</code>.</p>
+
+<h2>5. What does CALCULATE do?</h2>
+<p><code>CALCULATE</code> evaluates an expression after modifying the filter context. It is the most important DAX function.</p>
+<pre><code>Total Sales = SUM(Sales[Amount])
+
+Sales LY =
+CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
+
+Sales Growth % =
+DIVIDE([Total Sales] - [Sales LY], [Sales LY])</code></pre>
+<p>Using <code>DIVIDE</code> instead of the <code>/</code> operator avoids errors when the denominator is zero.</p>
+
+<h2>6. What is a star schema and why is it recommended?</h2>
+<p>A star schema has one central <strong>fact table</strong> with numeric events such as sales, connected to <strong>dimension tables</strong> such as date, product and customer. It is easy to understand, performs well and gives predictable filtering, so it is the recommended design for Power BI models.</p>
+
+<h2>7. What is the difference between Import mode and DirectQuery?</h2>
+<ul>
+  <li><strong>Import</strong> loads a copy of the data into Power BI. It is fast and supports the full range of features, but the data must be refreshed.</li>
+  <li><strong>DirectQuery</strong> keeps the data in the source and sends queries to it when you use the report. Data is more current, but performance depends on the source and some features are limited.</li>
+</ul>
+
+<h2>8. What types of relationships exist in Power BI?</h2>
+<p>One-to-many is the most common, followed by one-to-one and many-to-many. Filters usually flow from the "one" side to the "many" side. Cross-filter direction can be single or both; use "both" carefully because it can produce unexpected results.</p>
+
+<h2>9. What is row-level security (RLS)?</h2>
+<p>RLS restricts which rows of data a user can see. You define roles with DAX filter rules in Power BI Desktop, for example a manager seeing only their region, and then assign users to these roles in the Power BI Service.</p>
+
+<h2>10. How do you improve report performance?</h2>
+<ul>
+  <li>Remove columns and rows you do not need.</li>
+  <li>Use a star schema and avoid unnecessary many-to-many relationships.</li>
+  <li>Prefer measures over heavy calculated columns.</li>
+  <li>Limit the number of visuals on a page.</li>
+</ul>
+
+<h2>How to prepare</h2>
+<p>Build one end-to-end dashboard from a public dataset: clean it in Power Query, model it as a star schema, write a few DAX measures and design clear pages. In the interview, walk through your choices and the insight the dashboard gives. Also revise SQL, because most Power BI roles expect it; see our <a href="sql-interview-questions-for-data-analyst-freshers.html">SQL interview guide</a>.</p>
+<p>See current <a href="../power-bi-jobs.html">Power BI jobs</a> and <a href="../data-analyst-jobs.html">data analyst jobs</a>.</p>
+        <!-- AD SLOT: guide middle - paste your AdSense code here --><div class="ad-slot" aria-label="Advertisement"><span>Advertisement</span></div>
+        <div class="cta-band" style="margin-top:24px"><div><h2>Get new job alerts daily</h2><p>Join our community to hear about new openings first.</p></div>
+        <div class="cta-actions"><a class="btn btn-tg" data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Join Telegram</a>
+        <a class="btn btn-yt" data-youtube href="https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg" target="_blank" rel="noopener">YouTube</a></div></div>
+        <h2>More guides</h2>
+        <ul><li><a href="how-to-identify-fake-job-offers.html">How to Identify Fake Job Offers and Recruitment Scams in India</a></li><li><a href="how-to-improve-resume-ats-score.html">How to Improve Your Resume ATS Score: A Practical Guide for Freshers</a></li><li><a href="off-campus-placement-guide-for-freshers.html">Off-Campus Placement Guide for Freshers: How to Get an MNC Job</a></li></ul>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><img class="brand-mark" src="../assets/logo-mark.svg" alt="" width="36" height="36"><span>mncjobs<b>hub</b></span></a>
+          <p style="margin-top:10px">A free job update portal for freshers and off-campus candidates. We share information only; we are not a recruitment agency.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../guides/index.html">Guides</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy &amp; Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular Searches</h4>
+          <ul>
+            <!-- POPULAR:START --><li><a href="../python-developer-jobs.html">Python Developer Jobs in India</a></li><li><a href="../fresher-jobs.html">Fresher Jobs in India 2026</a></li><li><a href="../software-engineer-jobs.html">Software Engineer &amp; Developer Jobs in India</a></li><li><a href="../jobs-in-bengaluru.html">MNC Jobs in Bengaluru for Freshers</a></li><li><a href="../data-analyst-jobs.html">Data Analyst Jobs in India</a></li><li><a href="../power-bi-jobs.html">Power BI Developer Jobs in India</a></li><!-- POPULAR:END -->
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Telegram Channel</a></li>
+            <li><a data-instagram href="https://www.instagram.com/sqlwitharbaz" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a data-youtube href="https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a data-email href="mailto:mncjobshub.official@gmail.com">mncjobshub.official@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span data-year>2026</span> <span data-site>MNC JobsHub</span>. All rights reserved. Company names and logos belong to their respective owners.</div>
+    </div>
+  </footer>
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>

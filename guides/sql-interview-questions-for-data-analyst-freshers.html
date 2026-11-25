@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQL Interview Questions for Data Analyst Freshers (With Answers)</title>
+  <meta name="description" content="The SQL interview questions data analyst freshers get asked most often, with short answers and example queries for joins, GROUP BY, window functions and NULL handling.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mncjobshub.github.io/guides/sql-interview-questions-for-data-analyst-freshers.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MNC JobsHub">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="SQL Interview Questions for Data Analyst Freshers (With Answers)">
+  <meta property="og:description" content="The SQL interview questions data analyst freshers get asked most often, with short answers and example queries for joins, GROUP BY, window functions and NULL handling.">
+  <meta property="og:url" content="https://mncjobshub.github.io/guides/sql-interview-questions-for-data-analyst-freshers.html">
+  <meta property="og:image" content="https://mncjobshub.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SQL Interview Questions for Data Analyst Freshers (With Answers)">
+  <meta name="twitter:description" content="The SQL interview questions data analyst freshers get asked most often, with short answers and example queries for joins, GROUP BY, window functions and NULL handling.">
+  <meta name="twitter:image" content="https://mncjobshub.github.io/assets/og-image.png">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- GOOGLE ADSENSE: after approval, uncomment and add your publisher ID
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SQL Interview Questions for Data Analyst Freshers (With Answers)", "description": "The SQL interview questions data analyst freshers get asked most often, with short answers and example queries for joins, GROUP BY, window functions and NULL handling.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "inLanguage": "en-IN", "author": {"@type": "Organization", "name": "MNC JobsHub"}, "publisher": {"@type": "Organization", "name": "MNC JobsHub", "logo": {"@type": "ImageObject", "url": "https://mncjobshub.github.io/assets/logo-512.png"}}, "mainEntityOfPage": "https://mncjobshub.github.io/guides/sql-interview-questions-for-data-analyst-freshers.html"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mncjobshub.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://mncjobshub.github.io/guides/index.html"}, {"@type": "ListItem", "position": 3, "name": "SQL Interview Questions for Data Analyst Freshers (With Answers)", "item": "https://mncjobshub.github.io/guides/sql-interview-questions-for-data-analyst-freshers.html"}]}</script>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="MNC JobsHub home"><img class="brand-mark" src="../assets/logo-mark.svg" alt="" width="36" height="36"><span>mncjobs<b>hub</b></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="../index.html">Home</a>
+        <a href="../guides/index.html" class="active">Guides</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../privacy-policy.html">Privacy</a>
+        <a class="btn btn-tg btn-sm" data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Join Telegram</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero"><div class="container"><h1>SQL Interview Questions for Data Analyst Freshers (With Answers)</h1><p>Published 25 Nov 2026 by MNC JobsHub</p></div></section>
+    <div class="container section">
+      <div class="breadcrumb" style="margin-top:0"><a href="../index.html">Home</a> &rsaquo; <a href="index.html">Guides</a></div>
+      <article class="prose panel">
+        <p>SQL is the first skill most data analyst interviews test. The questions below come up again and again for fresher roles. Practise each one on a real table instead of only reading the answer, and learn to explain your query out loud.</p>
+
+<h2>1. What is the difference between WHERE and HAVING?</h2>
+<p><code>WHERE</code> filters rows before grouping. <code>HAVING</code> filters groups after <code>GROUP BY</code> and can use aggregate functions.</p>
+<pre><code>SELECT department, COUNT(*) AS employees
+FROM employees
+WHERE status = 'active'
+GROUP BY department
+HAVING COUNT(*) &gt; 10;</code></pre>
+
+<h2>2. Explain the different types of JOIN</h2>
+<ul>
+  <li><strong>INNER JOIN</strong> returns only rows that match in both tables.</li>
+  <li><strong>LEFT JOIN</strong> returns all rows from the left table and the matching rows from the right; unmatched right columns are NULL.</li>
+  <li><strong>RIGHT JOIN</strong> is the mirror image of LEFT JOIN.</li>
+  <li><strong>FULL OUTER JOIN</strong> returns all rows from both tables, matched where possible.</li>
+</ul>
+<p>A common follow-up: "find customers who never placed an order". Use a LEFT JOIN and filter where the right side is NULL.</p>
+<pre><code>SELECT c.customer_id, c.name
+FROM customers c
+LEFT JOIN orders o ON o.customer_id = c.customer_id
+WHERE o.order_id IS NULL;</code></pre>
+
+<h2>3. How do you find duplicate records?</h2>
+<pre><code>SELECT email, COUNT(*) AS cnt
+FROM users
+GROUP BY email
+HAVING COUNT(*) &gt; 1;</code></pre>
+
+<h2>4. How do you find the second highest salary?</h2>
+<p>Using a subquery:</p>
+<pre><code>SELECT MAX(salary) AS second_highest
+FROM employees
+WHERE salary &lt; (SELECT MAX(salary) FROM employees);</code></pre>
+<p>Using a window function, which also works for the Nth highest:</p>
+<pre><code>SELECT salary
+FROM (
+  SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk
+  FROM employees
+) t
+WHERE rnk = 2;</code></pre>
+
+<h2>5. What is the difference between RANK, DENSE_RANK and ROW_NUMBER?</h2>
+<ul>
+  <li><strong>ROW_NUMBER</strong> gives a unique number to every row, even when values tie.</li>
+  <li><strong>RANK</strong> gives tied rows the same rank and leaves gaps after them (1, 1, 3).</li>
+  <li><strong>DENSE_RANK</strong> gives tied rows the same rank without gaps (1, 1, 2).</li>
+</ul>
+
+<h2>6. How does SQL handle NULL values?</h2>
+<p>NULL means unknown, so <code>NULL = NULL</code> is not true. Use <code>IS NULL</code> or <code>IS NOT NULL</code>. Use <code>COALESCE</code> to replace NULL with a default value.</p>
+<pre><code>SELECT name, COALESCE(phone, 'not provided') AS phone
+FROM customers;</code></pre>
+
+<h2>7. What is the difference between UNION and UNION ALL?</h2>
+<p><code>UNION</code> removes duplicate rows from the combined result. <code>UNION ALL</code> keeps all rows and is usually faster because it skips the duplicate check.</p>
+
+<h2>8. What is a CTE and when do you use it?</h2>
+<p>A common table expression (<code>WITH</code> clause) gives a name to a temporary result so a long query becomes easier to read and reuse.</p>
+<pre><code>WITH monthly AS (
+  SELECT DATE_TRUNC('month', order_date) AS month, SUM(amount) AS revenue
+  FROM orders
+  GROUP BY 1
+)
+SELECT month, revenue
+FROM monthly
+ORDER BY month;</code></pre>
+<p>Date functions differ between databases, so be ready to mention the function for the database used by the employer.</p>
+
+<h2>9. How do you calculate a running total?</h2>
+<pre><code>SELECT order_date,
+       amount,
+       SUM(amount) OVER (ORDER BY order_date) AS running_total
+FROM orders;</code></pre>
+
+<h2>10. What is the difference between a primary key and a foreign key?</h2>
+<p>A primary key uniquely identifies each row in a table and cannot be NULL. A foreign key is a column that refers to the primary key of another table and keeps the relationship between the two tables consistent.</p>
+
+<h2>How to prepare</h2>
+<ul>
+  <li>Practise on real tables with a few thousand rows, not only tiny examples.</li>
+  <li>Say your approach aloud before you write the query: which tables, which join, what grouping.</li>
+  <li>Learn to check your result: row counts before and after a join, and whether duplicates appeared.</li>
+  <li>Prepare one project where you used SQL to answer a business question, and explain the insight you found.</li>
+</ul>
+<p>Looking for roles that ask for these skills? Browse current <a href="../sql-jobs.html">SQL jobs</a> and <a href="../data-analyst-jobs.html">data analyst jobs</a>.</p>
+        <!-- AD SLOT: guide middle - paste your AdSense code here --><div class="ad-slot" aria-label="Advertisement"><span>Advertisement</span></div>
+        <div class="cta-band" style="margin-top:24px"><div><h2>Get new job alerts daily</h2><p>Join our community to hear about new openings first.</p></div>
+        <div class="cta-actions"><a class="btn btn-tg" data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Join Telegram</a>
+        <a class="btn btn-yt" data-youtube href="https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg" target="_blank" rel="noopener">YouTube</a></div></div>
+        <h2>More guides</h2>
+        <ul><li><a href="how-to-identify-fake-job-offers.html">How to Identify Fake Job Offers and Recruitment Scams in India</a></li><li><a href="how-to-improve-resume-ats-score.html">How to Improve Your Resume ATS Score: A Practical Guide for Freshers</a></li><li><a href="off-campus-placement-guide-for-freshers.html">Off-Campus Placement Guide for Freshers: How to Get an MNC Job</a></li></ul>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../index.html"><img class="brand-mark" src="../assets/logo-mark.svg" alt="" width="36" height="36"><span>mncjobs<b>hub</b></span></a>
+          <p style="margin-top:10px">A free job update portal for freshers and off-campus candidates. We share information only; we are not a recruitment agency.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../guides/index.html">Guides</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="../privacy-policy.html">Privacy Policy &amp; Disclaimer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular Searches</h4>
+          <ul>
+            <!-- POPULAR:START --><li><a href="../python-developer-jobs.html">Python Developer Jobs in India</a></li><li><a href="../fresher-jobs.html">Fresher Jobs in India 2026</a></li><li><a href="../software-engineer-jobs.html">Software Engineer &amp; Developer Jobs in India</a></li><li><a href="../jobs-in-bengaluru.html">MNC Jobs in Bengaluru for Freshers</a></li><li><a href="../data-analyst-jobs.html">Data Analyst Jobs in India</a></li><li><a href="../power-bi-jobs.html">Power BI Developer Jobs in India</a></li><!-- POPULAR:END -->
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a data-telegram href="https://t.me/datajobsArbaz" target="_blank" rel="noopener">Telegram Channel</a></li>
+            <li><a data-instagram href="https://www.instagram.com/sqlwitharbaz" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a data-youtube href="https://www.youtube.com/channel/UCoLkZOFxtKFdpJcBpXyAyhg" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a data-email href="mailto:mncjobshub.official@gmail.com">mncjobshub.official@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span data-year>2026</span> <span data-site>MNC JobsHub</span>. All rights reserved. Company names and logos belong to their respective owners.</div>
+    </div>
+  </footer>
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>
