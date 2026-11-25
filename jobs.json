@@ -2,6 +2,61 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "hsbc-executive-compensation-analyst-hyderabad-bengaluru",
+      "company": "HSBC",
+      "role": "Executive Compensation Analyst",
+      "jobId": "63345",
+      "tags": [
+        "HR",
+        "Experienced"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "Experienced hiring (not a fresher role)",
+      "eligibility": "Experience or knowledge of reward systems, compensation management and total rewards (exact years not stated by the company)",
+      "experience": "Experienced professional (years not stated)",
+      "location": "Hyderabad, Telangana and Bengaluru, Karnataka",
+      "workMode": "Hybrid",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "Executive Compensation",
+        "Reward Management",
+        "Compensation & Benefits",
+        "Data Analysis",
+        "Reporting",
+        "Payroll"
+      ],
+      "postedOn": "2026-11-19",
+      "lastDate": "2026-11-23",
+      "applyLink": "https://portal.careers.hsbc.com/careers/job/563774612462179?utm_source=sp_auto_dm",
+      "summary": "HSBC is hiring an Executive Compensation Analyst for its Performance and Reward team in Hyderabad and Bengaluru (hybrid). Experienced hiring.",
+      "description": [
+        "HSBC is hiring an Executive Compensation Analyst for its Performance and Reward team, with openings in Hyderabad and Bengaluru and a hybrid work style. The role supports executive compensation, reward processes and regulatory requirements for the relevant business entity. HSBC describes itself as one of the largest banking and financial services organisations in the world, with operations in 64 countries and territories. The posting is issued by HSBC Electronic Data Processing (India) Private Limited.",
+        "In this role you will support the Reward Manager with reward processes, including the annual pay review, and work with business stakeholders and HR generalists so that reward policies support business objectives. You will help review and change existing reward programmes, including the design of new ones, and prepare reward metrics, reports and communications for senior stakeholders, external consultancies and regulatory bodies. You will also execute the annual pay review cycle, make sure eligibility information is shared accurately, and ensure that local regulatory rules and internal policies are followed throughout.",
+        "Please note that this is experienced hiring, not a fresher opening, because HSBC says it is looking for an experienced professional. The application deadline shown in the posting was 23 November 2026, which has already passed, so check the official page to see whether the role is still open before you apply. If you want to move into reward or compensation roles, learn the basics of total rewards, incentive compensation and benefits, and practise building clear reports from compensation data."
+      ],
+      "responsibilities": [
+        "Support the Reward Manager with reward processes, including the annual pay review.",
+        "Work with business stakeholders and HR generalists so reward policies support business objectives.",
+        "Support the review and change of existing reward programmes, including designing new programmes.",
+        "Produce reward metrics, reports and communications for senior stakeholders, consultancies and regulators.",
+        "Execute the annual pay review cycle and ensure eligibility information is shared accurately.",
+        "Ensure local regulatory rules and internal policies are followed in reward processes.",
+        "Support compensation analysis, performance reviews and reward programme monitoring.",
+        "Partner with stakeholders to deliver accurate, compliant and competitive reward outcomes."
+      ],
+      "requirements": [
+        "Experience or knowledge of reward systems, compensation management and total rewards.",
+        "Knowledge of executive compensation, incentive compensation and benefits management.",
+        "Understanding of reward strategy and how it aligns with business strategy.",
+        "Strong reporting, data analysis and performance analysis skills.",
+        "Experience supporting payroll processing and annual pay review activities.",
+        "Knowledge of compliance requirements, government regulations and internal policies.",
+        "Ability to monitor performance and assess the effectiveness of reward programmes.",
+        "Strong organisational, interpersonal, problem-solving, verbal and written communication skills."
+      ],
+      "aboutCompany": "HSBC is one of the largest banking and financial services organisations in the world, operating in 64 countries and territories. It states that it is an equal opportunity employer, considers applications on merit and suitability for the role, and supports continuous professional development and flexible working."
+    },
+    {
       "id": "apple-software-engineer-ai-bengaluru",
       "company": "Apple",
       "role": "Software Engineer - AI",
