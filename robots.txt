@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Update the line below when you change your domain
-Sitemap: https://mncjobshub.github.io/sitemap.xml
