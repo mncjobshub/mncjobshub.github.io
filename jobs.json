@@ -2,6 +2,61 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "apple-software-engineer-ai-bengaluru",
+      "company": "Apple",
+      "role": "Software Engineer - AI",
+      "jobId": "200689026-0321",
+      "tags": [
+        "Software Developer",
+        "AI & ML",
+        "Experienced"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "Experienced hiring (1+ years, not a fresher role)",
+      "eligibility": "Bachelor's degree or equivalent experience, with 1+ years in software and applied AI/ML engineering",
+      "experience": "1+ years",
+      "location": "Bengaluru, Karnataka",
+      "workMode": "Not specified by the company",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "Python",
+        "Java",
+        "Generative AI",
+        "RAG",
+        "Vector Databases",
+        "LangChain",
+        "LlamaIndex",
+        "AWS",
+        "PyTorch"
+      ],
+      "postedOn": "2026-10-15",
+      "applyLink": "https://jobs.apple.com/en-us/details/200689026-0321/software-engineer-ai",
+      "summary": "Apple is hiring a Software Engineer (AI) in Bengaluru to build GenAI and agentic data products. 1+ years of AI/ML engineering experience required.",
+      "description": [
+        "Apple is hiring a Software Engineer focused on AI for its Bengaluru location. The role is part of Information Systems and Technology (IS&T), the organisation that builds and runs the enterprise and customer technology systems behind Apple's business and supports around 2.5 billion active Apple devices. Within IS&T, the AI & Data Platforms (AiDP) team brings together data, application development and machine learning, including generative AI, to help Apple build and adopt AI-powered solutions faster.",
+        "You would join the Enterprise Data Warehouse team, which works with petabytes of data across real-time, near real-time and batch pipelines, and builds data-centric agentic solutions on top of those assets. The work supports business areas such as Retail, Sales, Operations, Finance, AppleCare, Marketing and Internet Services. In this role you are expected to understand a business challenge, work with business and cross-functional teams, design a statistical or deep learning solution, build it yourself or guide another engineer, deliver it to production and keep good governance of your work.",
+        "Please note that this is not an entry-level fresher opening, because Apple asks for at least 1+ years of experience in software and applied AI/ML engineering. The core requirements are strong Python or Java skills, hands-on experience with GenAI applications such as RAG pipelines, embeddings, vector databases and semantic search, and practical experience building AI agents or agentic workflows with frameworks like LangChain or LlamaIndex. If you are a graduate aiming for roles like this, build a small end-to-end RAG or agent project and be ready to explain how it works, how you tested it and how you would run it reliably in production."
+      ],
+      "responsibilities": [
+        "Understand business challenges and turn ambiguous problems into scalable technical designs.",
+        "Collaborate with business and other cross-functional teams.",
+        "Design statistical or deep learning solutions to answer business questions.",
+        "Develop solutions yourself or guide another person to build them.",
+        "Deliver solutions into production with attention to governance, reliability and observability.",
+        "Build data-centric agentic solutions on large enterprise data assets."
+      ],
+      "requirements": [
+        "Bachelor's degree or equivalent experience, with 1+ years in software and applied AI/ML engineering.",
+        "Programming proficiency in Python or Java.",
+        "Experience building GenAI-powered applications, including RAG pipelines, embeddings, vector databases and semantic search over structured and unstructured data.",
+        "Practical experience building AI agents or agentic workflows (planning, memory, tool use, execution loops) with frameworks such as LangChain or LlamaIndex.",
+        "Preferred: full-stack development across backend APIs, data services and front-end layers.",
+        "Preferred: multi-agent systems, and cloud platforms (AWS preferred, GCP or Azure) with ML frameworks such as PyTorch or TensorFlow.",
+        "Preferred: front-end or app frameworks such as React, Streamlit or FastAPI, and enterprise domain experience in Retail, Finance, Sales, Marketing or Operations analytics."
+      ],
+      "aboutCompany": "Apple's Information Systems and Technology (IS&T) organisation builds the enterprise and customer technology systems behind Apple's products and services. Apple states that accessibility is a fundamental human right and says this is reflected in its culture, benefits and digital tools."
+    },
+    {
       "id": "american-express-analyst-data-analytics-gurugram",
       "company": "American Express",
       "role": "Analyst - Data Analytics",
