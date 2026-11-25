@@ -27,7 +27,7 @@ jobportal/
 
 | What | Where | Replace with |
 |---|---|---|
-| Domain `https://www.yourdomain.in` | All `.html` files, `robots.txt`, `sitemap.xml` | Your domain (Find & Replace All) |
+| Domain `https://mncjobshub.github.io` | All `.html` files, `robots.txt`, `sitemap.xml` | Your domain (Find & Replace All) |
 | `siteUrl` | `CONFIG` in `assets/app.js` | Your domain |
 | `YOUR_FORM_ID` | `contact.html` | Your Formspree form ID (free) |
 
@@ -128,3 +128,34 @@ To do after going live:
 ## 11. Branding
 
 The logo is an SVG (`assets/logo-mark.svg`), so it stays sharp at every size. Contact email is `mncjobshub.official@gmail.com`. Colours: navy `#0a2463`, blue `#2563eb`, orange `#f97316`. To change the email later, edit `CONFIG.email` in `assets/app.js` and Find & Replace it in the HTML files.
+
+## 12. Current URL
+
+The site currently uses `https://mncjobshub.github.io`. When you connect a custom domain, Find & Replace `https://mncjobshub.github.io` with your new domain in all `.html` files, `robots.txt`, `sitemap.xml` and `CONFIG.siteUrl` in `assets/app.js`, then add the new domain in Google Search Console and use its "Change of address" tool.
+
+## 13. Auto-build system (job pages, category pages, guides, sitemap)
+
+You only edit `jobs.json`. `build.py` then generates everything else:
+
+| Output | What it is |
+|---|---|
+| `jobs/<id>.html` | One real HTML page per job (best for Google, WhatsApp and Telegram previews) |
+| `fresher-jobs.html`, `data-analyst-jobs.html`, `power-bi-jobs.html`, `sql-jobs.html`, `python-developer-jobs.html`, `jobs-in-bengaluru.html` ... | Search landing pages. A page is created only when at least one job matches, so there are no empty pages |
+| `guides/*.html` | Career guides (from `src/guides/`) |
+| `sitemap.xml` | Always in sync with all pages |
+| `index.html` blocks | Latest jobs, category links and guide links are filled in automatically |
+
+### Option A (recommended): automatic build on GitHub
+1. Upload the file `.github/workflows/build.yml` (create it in GitHub with **Add file -> Create new file** and the name `.github/workflows/build.yml`).
+2. Edit `jobs.json` on GitHub and commit. In 1-2 minutes the **Actions** tab shows "Build site" running, and the new job pages appear in the repo and on the site.
+3. It also rebuilds every day at 06:00 IST so "New" and "Expired" badges stay correct. You can run it manually from **Actions -> Build site -> Run workflow**.
+
+### Option B: build on your computer
+Install Python 3, then in this folder run `python3 build.py` and upload the changed files.
+
+### Rules for jobs.json
+- `id` is lowercase letters, numbers and hyphens, and must be unique. It becomes the page address.
+- Use `tags` such as `Fresher`, `Experienced`, `Data Analyst`, `Software Developer`, `Internship`, `Off-Campus`, `HR`, `QA Testing`, `AI & ML`, `Cloud & Infrastructure`. These decide which category pages the job appears on. Skills and location also match categories (for example `Power BI`, `SQL`, `Python`, `Bengaluru`).
+- Add more categories or edit the text in `src/categories.json`. Add or edit guides in `src/guides/` (the first lines are `title:`, `description:`, `date:`, then a line with `---`, then the HTML).
+- Links, email and resources for generated pages are in `src/site.json`.
+- When you change your domain, update `siteUrl` in `src/site.json` and `assets/app.js`, Find & Replace the old address in `index.html`, `about.html`, `contact.html`, `privacy-policy.html`, `job-details.html` and `robots.txt`, then run the build again.
