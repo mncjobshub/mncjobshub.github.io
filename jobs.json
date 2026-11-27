@@ -2,6 +2,55 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "ibm-system-support-representative-hyderabad-pune-gurugram-chennai-noida-bengaluru-delhi",
+      "company": "IBM",
+      "role": "System Support Representative",
+      "jobId": "142095",
+      "tags": [
+        "Fresher",
+        "Cloud & Infrastructure"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "Freshers (0 years of experience); no backlogs at the time of the IBM selection process",
+      "eligibility": "B.E/B.Tech in Electronics, Electronics & Communications or Information Technology; no active backlogs",
+      "experience": "Freshers (0 years)",
+      "location": "Hyderabad, Pune, Gurugram, Chennai, Noida, Bengaluru and New Delhi",
+      "workMode": "Hybrid",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "Hardware Support",
+        "Networking",
+        "Operating Systems",
+        "Customer Service",
+        "Troubleshooting"
+      ],
+      "website": "ibm.com",
+      "postedOn": "2026-11-27",
+      "applyLink": "https://careers.ibm.com/en_US/careers/JobDetail?jobId=142095",
+      "summary": "IBM is hiring freshers (B.E/B.Tech, 0 years) as System Support Representative in Hyderabad, Pune, Gurugram, Chennai, Noida, Bengaluru and New Delhi. Hybrid, day shift.",
+      "description": [
+        "IBM India is hiring a System Support Representative for its Infrastructure and Technology area, and the posting is open to freshers with 0 years of experience. The role is a regular, professional-level position with a general day shift, a hybrid work arrangement and no travel. Openings are listed for Hyderabad, Pune, Gurugram, Chennai, Noida, Bengaluru and New Delhi.",
+        "This is an individual contributor role focused on customers. You will be responsible for on-site installation, maintenance and repair of IBM and multi-vendor systems and components, including hardware, networking products, software and operating systems. You will be the main technical contact for customers, coordinating hardware and software support and delivering technical services. When a critical situation occurs, you act as the IBM technical contact and manage it until the problem is fixed.",
+        "Client satisfaction is the main goal of the job. You will work with clients, vendors and senior management to identify and resolve complex technical problems. The business unit is IBM Systems, which builds servers and storage for hybrid cloud and AI. Candidates should have a B.E/B.Tech degree in Electronics, Electronics & Communications or Information Technology and no backlogs when the IBM selection process takes place. IBM suggests applying to no more than 3 roles in a year, so apply only if this role matches your skills."
+      ],
+      "responsibilities": [
+        "Install, maintain and repair IBM and multi-vendor hardware, networking products, software and operating systems at customer sites.",
+        "Act as the primary technical contact for customers and coordinate hardware and software support.",
+        "Deliver technical services as required by the customer.",
+        "Work with clients, vendors and senior management to resolve complex technical problems.",
+        "Manage critical situations as the IBM technical contact until the problem is fixed.",
+        "Ensure a high level of customer satisfaction with service delivery, technical support and operational services."
+      ],
+      "requirements": [
+        "B.E/B.Tech degree in Electronics, Electronics & Communications or Information Technology.",
+        "No backlogs at the time of the IBM selection process.",
+        "0 years of experience (freshers can apply).",
+        "Good communication and customer handling skills.",
+        "Basic understanding of hardware, networking and operating systems."
+      ],
+      "aboutCompany": "IBM is one of the largest technology and consulting employers in the world, founded in 1911. It builds open hybrid cloud and AI solutions for clients across industries, and IBM Systems develops servers and storage for hybrid cloud and AI."
+    },
+    {
       "id": "genpact-aws-data-engineer-delhi-ncr-bengaluru-hyderabad",
       "company": "Genpact",
       "role": "AWS Data Engineer",
