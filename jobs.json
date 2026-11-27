@@ -2,6 +2,56 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "genpact-aws-data-engineer-delhi-ncr-bengaluru-hyderabad",
+      "company": "Genpact",
+      "role": "AWS Data Engineer",
+      "tags": [
+        "Data Engineer",
+        "Cloud & Infrastructure",
+        "Experienced"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "Experienced hiring (not a fresher role)",
+      "eligibility": "Any graduate (UG) with 5 to 10 years of experience in data engineering",
+      "experience": "5 - 10 years",
+      "location": "Delhi NCR, Bengaluru and Hyderabad",
+      "workMode": "Hybrid",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "AWS Data Engineering",
+        "PySpark",
+        "Python",
+        "SQL",
+        "CI/CD"
+      ],
+      "website": "genpact.com",
+      "postedOn": "2026-11-19",
+      "applyLink": "https://www.naukri.com/job-listings-aws-data-engineer-genpact-hyderabad-bengaluru-delhi-ncr-5-to-10-years-191126034603",
+      "summary": "Genpact is hiring an AWS Data Engineer with 5-10 years of experience (PySpark, Python, SQL) in Delhi NCR, Bengaluru and Hyderabad. Hybrid work.",
+      "description": [
+        "Genpact is hiring an AWS Data Engineer for its data and analytics work, with openings in Delhi NCR, Bengaluru and Hyderabad in a hybrid work model. The role is listed under IT Services and Consulting, in the Data Science and Analytics department, as a full-time, permanent position. The posting mentions 3 openings and asks for 5 to 10 years of experience, so it is aimed at experienced engineers and not at freshers.",
+        "The core of the job is building and improving data pipelines and integration frameworks. You will develop and optimise complex pipelines, reconcile data, build advanced transformations and tune performance. You will also design and run unit, integration and system tests, put CI/CD processes and engineering automation standards in place, and build monitoring, observability and alerting so that problems are caught early. Another part of the role is using cloud platforms in a cost-aware way, and troubleshooting complex production and performance issues.",
+        "The key skills named in the posting are AWS data engineering, PySpark, Python and SQL. Any graduate can apply as long as the experience requirement is met. If you are earlier in your career and want to reach this level, build a small end-to-end pipeline on AWS with PySpark, add tests and monitoring, and be ready to explain how you handled data quality and cost in your design."
+      ],
+      "responsibilities": [
+        "Develop and optimise complex data pipelines and integration frameworks.",
+        "Perform data reconciliation, advanced transformation development and performance tuning.",
+        "Design and run unit, integration and system testing activities.",
+        "Implement CI/CD processes and engineering automation standards.",
+        "Build monitoring, observability and alerting capabilities.",
+        "Optimise platform usage through cloud cost-aware engineering practices.",
+        "Troubleshoot complex production and performance issues."
+      ],
+      "requirements": [
+        "5 to 10 years of experience in data engineering.",
+        "Hands-on experience with AWS data engineering services.",
+        "Strong skills in PySpark, Python and SQL.",
+        "Experience building and testing data pipelines, and implementing CI/CD.",
+        "Education: any graduate (UG)."
+      ],
+      "aboutCompany": "Genpact (NYSE: G) describes itself as an advanced technology services and solutions company that helps global enterprises with deep business knowledge, operational excellence and solutions built on data, technology and AI."
+    },
+    {
       "id": "hsbc-executive-compensation-analyst-hyderabad-bengaluru",
       "company": "HSBC",
       "role": "Executive Compensation Analyst",
