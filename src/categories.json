@@ -5,15 +5,28 @@
     "title": "Fresher Jobs in India 2026 - MNC Entry-Level Openings",
     "description": "Latest fresher jobs at MNCs and technology companies in India. Check eligibility, batch, location and the official apply link for every entry-level opening.",
     "hero": "Entry-level openings for fresh graduates, with eligibility details and official apply links.",
-    "match": { "tags": ["Fresher"] },
+    "match": {
+      "tags": [
+        "Fresher"
+      ]
+    },
     "intro": [
       "This page lists current fresher openings at multinational companies and leading technology firms. Each listing shows the eligible degree or batch, the location and the official apply link, so you can quickly decide whether a role fits you.",
       "Shortlist the roles that match your degree and skills, read the eligibility carefully and apply on the company's own careers page. Freshers usually stand out when the resume highlights projects, internships and the skills named in the job description."
     ],
     "faq": [
-      { "q": "Can final-year students apply for these jobs?", "a": "It depends on the company. Each job page states the batch or education criteria. If it is not stated, check the official careers page before you apply." },
-      { "q": "Do freshers have to pay anything to apply?", "a": "No. Genuine companies never charge candidates. Every apply button on this website leads to the company's official careers page." },
-      { "q": "How can I hear about new fresher jobs first?", "a": "New openings are posted on our Telegram channel and Instagram page as soon as they are published." }
+      {
+        "q": "Can final-year students apply for these jobs?",
+        "a": "It depends on the company. Each job page states the batch or education criteria. If it is not stated, check the official careers page before you apply."
+      },
+      {
+        "q": "Do freshers have to pay anything to apply?",
+        "a": "No. Genuine companies never charge candidates. Every apply button on this website leads to the company's official careers page."
+      },
+      {
+        "q": "How can I hear about new fresher jobs first?",
+        "a": "New openings are posted on our Telegram channel and Instagram page as soon as they are published."
+      }
     ]
   },
   {
@@ -22,15 +35,60 @@
     "title": "Data Analyst Jobs in India - Fresher & Experienced Openings",
     "description": "Data analyst openings at MNCs in India, with skills, eligibility, location and official apply links. Covers SQL, Power BI, Excel and Python based roles.",
     "hero": "Data analyst and analytics openings, with the skills each employer asks for.",
-    "match": { "tags": ["Data Analyst"], "role_regex": "data analy|analytics|business analyst|bi developer" },
+    "match": {
+      "tags": [
+        "Data Analyst"
+      ],
+      "role_regex": "data analy|analytics|business analyst|bi developer"
+    },
     "intro": [
       "Data analyst roles usually ask for strong SQL, spreadsheet skills and a BI tool such as Power BI or Tableau. Many openings also value Python and a basic understanding of statistics.",
       "If you are preparing, practise SQL queries on real tables, build two or three dashboards you can explain, and read our guide on SQL interview questions for data analyst freshers."
     ],
     "faq": [
-      { "q": "What skills do I need for a data analyst job?", "a": "SQL, Excel, a BI tool such as Power BI or Tableau, and the ability to explain insights in simple language. Python is a common plus." },
-      { "q": "Can a fresher become a data analyst without experience?", "a": "Yes. Many companies hire freshers and trainees. Projects, SQL practice and a small dashboard portfolio help you show your skills." },
-      { "q": "Are all listings here for freshers?", "a": "No. Each listing is tagged as Fresher or Experienced, and the job page states the experience required." }
+      {
+        "q": "What skills do I need for a data analyst job?",
+        "a": "SQL, Excel, a BI tool such as Power BI or Tableau, and the ability to explain insights in simple language. Python is a common plus."
+      },
+      {
+        "q": "Can a fresher become a data analyst without experience?",
+        "a": "Yes. Many companies hire freshers and trainees. Projects, SQL practice and a small dashboard portfolio help you show your skills."
+      },
+      {
+        "q": "Are all listings here for freshers?",
+        "a": "No. Each listing is tagged as Fresher or Experienced, and the job page states the experience required."
+      }
+    ]
+  },
+  {
+    "slug": "data-engineer-jobs",
+    "h1": "Data Engineer Jobs in India",
+    "title": "Data Engineer Jobs in India - AWS, PySpark & SQL Openings",
+    "description": "Data engineer openings at MNCs in India that ask for AWS, PySpark, Python and SQL, with experience required, location and official apply links.",
+    "hero": "Data engineering openings: pipelines, cloud platforms and big data.",
+    "match": {
+      "tags": [
+        "Data Engineer"
+      ],
+      "role_regex": "data engineer|etl|pyspark|big data"
+    },
+    "intro": [
+      "Data engineers build and maintain the pipelines that move, clean and transform data so analysts and data scientists can use it. Typical requirements are strong SQL and Python, PySpark or a similar big data tool, a cloud platform such as AWS, and good habits around testing and monitoring.",
+      "Many data engineer roles ask for several years of experience. If you are a fresher, a data analyst or trainee role is a common starting point, and a small end-to-end pipeline project can help you show practical skills."
+    ],
+    "faq": [
+      {
+        "q": "What skills does a data engineer need?",
+        "a": "SQL, Python, a big data tool such as PySpark, a cloud platform such as AWS, and knowledge of testing, scheduling and monitoring data pipelines."
+      },
+      {
+        "q": "Can freshers become data engineers?",
+        "a": "Yes, but many openings ask for experience. Freshers often start in data analyst, support or trainee roles and move across as they build pipeline skills."
+      },
+      {
+        "q": "Is AWS required for every data engineer job?",
+        "a": "No. Employers use different clouds. The job page lists the platform and tools the employer names."
+      }
     ]
   },
   {
@@ -39,14 +97,24 @@
     "title": "Power BI Developer Jobs in India - Latest Openings",
     "description": "Power BI developer and analyst openings at MNCs in India with required skills, eligibility, location and official apply links.",
     "hero": "Openings where Power BI is a required or preferred skill.",
-    "match": { "skills": ["Power BI"] },
+    "match": {
+      "skills": [
+        "Power BI"
+      ]
+    },
     "intro": [
       "Power BI roles typically involve cleaning data in Power Query, building a data model, writing DAX measures and designing reports that business teams can use. Employers also look for SQL and clear communication.",
       "To prepare, practise building a star-schema model, writing a few DAX measures such as year-over-year growth, and explaining your dashboards to a non-technical person."
     ],
     "faq": [
-      { "q": "Is SQL required for Power BI jobs?", "a": "Most employers expect it, because the data usually comes from databases. Read each job's requirements to see the exact skills." },
-      { "q": "What should a fresher learn first for Power BI?", "a": "Start with Power Query for cleaning data, then data modelling, then basic DAX measures, then report design." }
+      {
+        "q": "Is SQL required for Power BI jobs?",
+        "a": "Most employers expect it, because the data usually comes from databases. Read each job's requirements to see the exact skills."
+      },
+      {
+        "q": "What should a fresher learn first for Power BI?",
+        "a": "Start with Power Query for cleaning data, then data modelling, then basic DAX measures, then report design."
+      }
     ]
   },
   {
@@ -55,14 +123,24 @@
     "title": "SQL Jobs in India - Openings That Ask for SQL Skills",
     "description": "Jobs in India that require SQL: data analyst, reporting and software roles at MNCs with eligibility and official apply links.",
     "hero": "Openings where SQL is a required or preferred skill.",
-    "match": { "skills": ["SQL"] },
+    "match": {
+      "skills": [
+        "SQL"
+      ]
+    },
     "intro": [
       "SQL is one of the most common requirements across data, reporting, testing and software roles. Employers usually test joins, grouping, subqueries and window functions in interviews.",
       "Practise on realistic tables and learn to explain your query step by step. Our SQL interview guide covers the questions that come up most often."
     ],
     "faq": [
-      { "q": "Which SQL topics are asked most in interviews?", "a": "Joins, GROUP BY with HAVING, subqueries, window functions such as RANK and ROW_NUMBER, and handling NULL values." },
-      { "q": "Do I need to know a specific database?", "a": "The core SQL is similar across databases. The job page lists any specific tools the employer mentions." }
+      {
+        "q": "Which SQL topics are asked most in interviews?",
+        "a": "Joins, GROUP BY with HAVING, subqueries, window functions such as RANK and ROW_NUMBER, and handling NULL values."
+      },
+      {
+        "q": "Do I need to know a specific database?",
+        "a": "The core SQL is similar across databases. The job page lists any specific tools the employer mentions."
+      }
     ]
   },
   {
@@ -71,14 +149,25 @@
     "title": "Python Developer Jobs in India - Fresher & Experienced",
     "description": "Python developer and Python-based engineering openings at MNCs in India, with eligibility, location and official apply links.",
     "hero": "Openings where Python is a core skill.",
-    "match": { "skills": ["Python"], "role_regex": "python" },
+    "match": {
+      "skills": [
+        "Python"
+      ],
+      "role_regex": "python"
+    },
     "intro": [
       "Python is used for backend services, automation, data processing and AI work. Fresher roles usually test the basics: data structures, functions, file handling and writing clean, readable code.",
       "Keep one or two small projects on GitHub and be ready to explain how they work. Basic SQL is also valuable because many Python roles work with databases."
     ],
     "faq": [
-      { "q": "What do companies test in a Python fresher interview?", "a": "Core Python, data structures, basic algorithms, simple SQL and your projects." },
-      { "q": "Is a computer science degree compulsory?", "a": "Each posting states its own criteria. Check the eligibility section on the job page." }
+      {
+        "q": "What do companies test in a Python fresher interview?",
+        "a": "Core Python, data structures, basic algorithms, simple SQL and your projects."
+      },
+      {
+        "q": "Is a computer science degree compulsory?",
+        "a": "Each posting states its own criteria. Check the eligibility section on the job page."
+      }
     ]
   },
   {
@@ -87,14 +176,25 @@
     "title": "Software Engineer Jobs in India - MNC Developer Openings",
     "description": "Software engineer and developer openings at MNCs in India for freshers and experienced candidates, with official apply links.",
     "hero": "Software development openings at MNCs and technology firms.",
-    "match": { "tags": ["Software Developer"], "role_regex": "software|developer|sde" },
+    "match": {
+      "tags": [
+        "Software Developer"
+      ],
+      "role_regex": "software|developer|sde"
+    },
     "intro": [
       "Software engineer and developer roles are the largest group of fresher hiring in technology. Typical selection steps are an online assessment, one or two technical interviews and an HR round.",
       "Revise data structures and algorithms, one programming language in depth, basic SQL and the fundamentals of how the web works. Prepare to explain your projects clearly."
     ],
     "faq": [
-      { "q": "How should a fresher prepare for a software engineer interview?", "a": "Practise data structures and algorithms, learn one language well, revise SQL basics and be ready to discuss your projects." },
-      { "q": "What is the difference between off-campus and on-campus hiring?", "a": "On-campus hiring happens through your college. Off-campus hiring is open to anyone who meets the criteria and applies directly online." }
+      {
+        "q": "How should a fresher prepare for a software engineer interview?",
+        "a": "Practise data structures and algorithms, learn one language well, revise SQL basics and be ready to discuss your projects."
+      },
+      {
+        "q": "What is the difference between off-campus and on-campus hiring?",
+        "a": "On-campus hiring happens through your college. Off-campus hiring is open to anyone who meets the criteria and applies directly online."
+      }
     ]
   },
   {
@@ -103,14 +203,24 @@
     "title": "Internships in India 2026 - Tech & Data Internships",
     "description": "Latest tech and data internships in India with stipend details, eligibility, location and official apply links.",
     "hero": "Internships and training programmes for students and recent graduates.",
-    "match": { "tags": ["Internship"] },
+    "match": {
+      "tags": [
+        "Internship"
+      ]
+    },
     "intro": [
       "Internships are one of the best ways to build real experience before your first full-time job. Many companies use them to hire full-time employees later.",
       "Apply with a clean resume and a GitHub or portfolio link where possible. Check the duration, stipend and whether a pre-placement offer is mentioned."
     ],
     "faq": [
-      { "q": "Are internships paid?", "a": "It varies. The job page states the stipend when the company shares it." },
-      { "q": "Can an internship lead to a full-time job?", "a": "Some companies hire interns full-time. When a posting mentions it, we note it on the job page." }
+      {
+        "q": "Are internships paid?",
+        "a": "It varies. The job page states the stipend when the company shares it."
+      },
+      {
+        "q": "Can an internship lead to a full-time job?",
+        "a": "Some companies hire interns full-time. When a posting mentions it, we note it on the job page."
+      }
     ]
   },
   {
@@ -119,14 +229,24 @@
     "title": "Off-Campus Drives 2026 - MNC Hiring for Freshers",
     "description": "Latest off-campus drives at MNCs and technology companies in India. Check batch, eligibility, selection process and the official apply link.",
     "hero": "Off-campus hiring drives open to graduates across colleges.",
-    "match": { "tags": ["Off-Campus"] },
+    "match": {
+      "tags": [
+        "Off-Campus"
+      ]
+    },
     "intro": [
       "An off-campus drive is a hiring process where a company recruits graduates directly, outside college placement programmes. Anyone who meets the eligibility criteria can usually apply online.",
       "Apply early, because many drives close as soon as enough applications are received. Always apply through the official link given on the job page."
     ],
     "faq": [
-      { "q": "How do I find genuine off-campus drives?", "a": "Use the company's official careers page. Every job here links to it, and genuine companies never ask for money." },
-      { "q": "Which batch can apply?", "a": "Each job page shows the eligible batch or education criteria stated by the company." }
+      {
+        "q": "How do I find genuine off-campus drives?",
+        "a": "Use the company's official careers page. Every job here links to it, and genuine companies never ask for money."
+      },
+      {
+        "q": "Which batch can apply?",
+        "a": "Each job page shows the eligible batch or education criteria stated by the company."
+      }
     ]
   },
   {
@@ -135,14 +255,25 @@
     "title": "HR & Recruiter Jobs in India - Fresher Openings",
     "description": "HR, recruiter and talent acquisition openings at MNCs in India, with eligibility, location and official apply links.",
     "hero": "Human resources and talent acquisition openings.",
-    "match": { "tags": ["HR"], "role_regex": "\\bhr\\b|human resources|recruit|talent acquisition" },
+    "match": {
+      "tags": [
+        "HR"
+      ],
+      "role_regex": "\\bhr\\b|human resources|recruit|talent acquisition"
+    },
     "intro": [
       "HR and recruitment roles include talent acquisition, HR operations, onboarding and employee support. Entry-level roles value communication, organisation and comfort with tools such as spreadsheets and applicant tracking systems.",
       "Be careful with HR job offers that ask for a registration fee. Genuine employers never charge candidates."
     ],
     "faq": [
-      { "q": "Which degree is needed for HR roles?", "a": "It depends on the employer. The job page lists the education criteria." },
-      { "q": "Do HR roles need technical skills?", "a": "Basic spreadsheet and communication skills are common. Technical recruiting roles may also ask you to understand tech roles." }
+      {
+        "q": "Which degree is needed for HR roles?",
+        "a": "It depends on the employer. The job page lists the education criteria."
+      },
+      {
+        "q": "Do HR roles need technical skills?",
+        "a": "Basic spreadsheet and communication skills are common. Technical recruiting roles may also ask you to understand tech roles."
+      }
     ]
   },
   {
@@ -151,14 +282,29 @@
     "title": "AI & Machine Learning Jobs in India - Latest Openings",
     "description": "AI, machine learning and generative AI openings at MNCs in India with required skills, eligibility, location and official apply links.",
     "hero": "AI, machine learning and generative AI openings.",
-    "match": { "tags": ["AI & ML"], "skills": ["Generative AI", "Machine Learning"], "role_regex": "\\bai\\b|machine learning|\\bml\\b" },
+    "match": {
+      "tags": [
+        "AI & ML"
+      ],
+      "skills": [
+        "Generative AI",
+        "Machine Learning"
+      ],
+      "role_regex": "\\bai\\b|machine learning|\\bml\\b"
+    },
     "intro": [
       "AI roles increasingly ask for hands-on work with generative AI, retrieval pipelines, embeddings and agent frameworks, on top of strong Python and software engineering skills.",
       "Many of these roles need some experience. Freshers can build a small end-to-end project, such as a retrieval-based question answering app, to show practical skills."
     ],
     "faq": [
-      { "q": "Can freshers apply for AI roles?", "a": "Some roles are open to freshers and many need 1+ years. The job page states the experience required." },
-      { "q": "Which skills matter most?", "a": "Python, machine learning basics, working with data and APIs, and for newer roles, generative AI tooling." }
+      {
+        "q": "Can freshers apply for AI roles?",
+        "a": "Some roles are open to freshers and many need 1+ years. The job page states the experience required."
+      },
+      {
+        "q": "Which skills matter most?",
+        "a": "Python, machine learning basics, working with data and APIs, and for newer roles, generative AI tooling."
+      }
     ]
   },
   {
@@ -167,14 +313,25 @@
     "title": "Cloud & Infrastructure Jobs in India - Azure, AWS Openings",
     "description": "Cloud, Azure, AWS and infrastructure openings at MNCs in India with skills, eligibility, location and official apply links.",
     "hero": "Cloud, infrastructure and platform openings.",
-    "match": { "tags": ["Cloud & Infrastructure"], "role_regex": "cloud|azure|aws|devops|infrastructure" },
+    "match": {
+      "tags": [
+        "Cloud & Infrastructure"
+      ],
+      "role_regex": "cloud|azure|aws|devops|infrastructure"
+    },
     "intro": [
       "Cloud and infrastructure roles involve designing, deploying and maintaining systems on platforms such as Azure, AWS or Google Cloud. Linux, networking basics and scripting are common requirements.",
       "Building a small hands-on lab and documenting it is a good way for freshers to show practical skills."
     ],
     "faq": [
-      { "q": "Which cloud platform should I learn first?", "a": "Pick the one named in the jobs you want. Azure, AWS and Google Cloud share many concepts." },
-      { "q": "Are certifications required?", "a": "Usually not for fresher roles, but they can help. Check the job's requirements." }
+      {
+        "q": "Which cloud platform should I learn first?",
+        "a": "Pick the one named in the jobs you want. Azure, AWS and Google Cloud share many concepts."
+      },
+      {
+        "q": "Are certifications required?",
+        "a": "Usually not for fresher roles, but they can help. Check the job's requirements."
+      }
     ]
   },
   {
@@ -183,14 +340,25 @@
     "title": "QA & Software Testing Jobs in India - Fresher Openings",
     "description": "QA, software testing and test automation openings at MNCs in India with eligibility, location and official apply links.",
     "hero": "Manual testing, automation and quality engineering openings.",
-    "match": { "tags": ["QA Testing"], "role_regex": "\\bqa\\b|testing|sdet|test engineer" },
+    "match": {
+      "tags": [
+        "QA Testing"
+      ],
+      "role_regex": "\\bqa\\b|testing|sdet|test engineer"
+    },
     "intro": [
       "QA roles cover manual testing, test automation, API testing and quality engineering. Entry-level roles check your understanding of the testing life cycle and basic programming.",
       "Learn a tool such as Selenium, practise writing test cases for everyday products and be ready to explain how you would test them."
     ],
     "faq": [
-      { "q": "Do QA roles need coding?", "a": "Automation roles do. Manual testing roles focus more on test design, but basic programming is a plus." },
-      { "q": "Can QA lead to other roles?", "a": "Yes. Many testers move to automation, SDET or test lead roles." }
+      {
+        "q": "Do QA roles need coding?",
+        "a": "Automation roles do. Manual testing roles focus more on test design, but basic programming is a plus."
+      },
+      {
+        "q": "Can QA lead to other roles?",
+        "a": "Yes. Many testers move to automation, SDET or test lead roles."
+      }
     ]
   },
   {
@@ -199,14 +367,22 @@
     "title": "MNC Jobs in Bengaluru 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Bengaluru for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Bengaluru, Karnataka.",
-    "match": { "location_regex": "bengaluru|bangalore" },
+    "match": {
+      "location_regex": "bengaluru|bangalore"
+    },
     "intro": [
       "Bengaluru is India's largest technology hub, with global capability centres, product companies and IT services firms hiring across software, data and cloud roles.",
       "Check each listing for the exact office location, work mode (on-site, hybrid or remote) and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced and the job page states the experience required." },
-      { "q": "Is relocation support provided?", "a": "Only if the company states it. Check the official posting." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced and the job page states the experience required."
+      },
+      {
+        "q": "Is relocation support provided?",
+        "a": "Only if the company states it. Check the official posting."
+      }
     ]
   },
   {
@@ -215,14 +391,22 @@
     "title": "MNC Jobs in Hyderabad 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Hyderabad for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Hyderabad, Telangana.",
-    "match": { "location_regex": "hyderabad" },
+    "match": {
+      "location_regex": "hyderabad"
+    },
     "intro": [
       "Hyderabad has a large technology and services cluster, with big tech offices, global delivery centres and pharma-IT firms hiring for software, data and support roles.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   },
   {
@@ -231,14 +415,22 @@
     "title": "MNC Jobs in Pune 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Pune for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Pune, Maharashtra.",
-    "match": { "location_regex": "pune" },
+    "match": {
+      "location_regex": "pune"
+    },
     "intro": [
       "Pune is a major IT and engineering city, with software services, automotive-tech and product companies recruiting freshers in development, testing and data roles.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   },
   {
@@ -247,14 +439,22 @@
     "title": "MNC Jobs in Chennai 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Chennai for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Chennai, Tamil Nadu.",
-    "match": { "location_regex": "chennai" },
+    "match": {
+      "location_regex": "chennai"
+    },
     "intro": [
       "Chennai combines IT services, banking technology and manufacturing-tech employers, so you will see openings in development, testing, support and analytics.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   },
   {
@@ -263,14 +463,22 @@
     "title": "MNC Jobs in Gurugram 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Gurugram (Gurgaon) for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Gurugram, Haryana.",
-    "match": { "location_regex": "gurugram|gurgaon" },
+    "match": {
+      "location_regex": "gurugram|gurgaon"
+    },
     "intro": [
       "Gurugram is a corporate hub in the Delhi NCR region, home to many MNC offices in consulting, financial services and technology, with frequent analytics and operations openings.",
       "Check each listing for the exact office location, shift timings, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Do these roles have night or evening shifts?", "a": "Some do. The job page mentions the shift when the company states it." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Do these roles have night or evening shifts?",
+        "a": "Some do. The job page mentions the shift when the company states it."
+      }
     ]
   },
   {
@@ -279,14 +487,22 @@
     "title": "MNC Jobs in Noida 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Noida for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Noida, Uttar Pradesh.",
-    "match": { "location_regex": "noida" },
+    "match": {
+      "location_regex": "noida"
+    },
     "intro": [
       "Noida hosts many IT services, product and business services employers in Delhi NCR, with regular hiring for software, support and analytics roles.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   },
   {
@@ -295,14 +511,22 @@
     "title": "MNC Jobs in Mumbai 2026 - Fresher & Experienced",
     "description": "Latest MNC job openings in Mumbai for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Mumbai, Maharashtra.",
-    "match": { "location_regex": "mumbai|navi mumbai" },
+    "match": {
+      "location_regex": "mumbai|navi mumbai"
+    },
     "intro": [
       "Mumbai is India's financial capital, so banking, financial services and consulting firms hire here for technology, analytics and operations roles.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   },
   {
@@ -311,14 +535,22 @@
     "title": "MNC Jobs in Bhubaneswar 2026 - Fresher Openings",
     "description": "Latest MNC job openings in Bhubaneswar, Odisha for freshers and experienced candidates, with eligibility and official apply links.",
     "hero": "Openings located in Bhubaneswar, Odisha.",
-    "match": { "location_regex": "bhubaneswar|bhubaneshwar" },
+    "match": {
+      "location_regex": "bhubaneswar|bhubaneshwar"
+    },
     "intro": [
       "Bhubaneswar is a growing IT hub in Odisha, with several IT services companies running delivery centres and hiring fresh graduates.",
       "Check each listing for the exact office location, work mode and eligibility before applying."
     ],
     "faq": [
-      { "q": "Are these jobs open to freshers?", "a": "Some are. Each listing is tagged Fresher or Experienced." },
-      { "q": "Where do I apply?", "a": "Use the Apply Now button on the job page. It leads to the company's official careers page." }
+      {
+        "q": "Are these jobs open to freshers?",
+        "a": "Some are. Each listing is tagged Fresher or Experienced."
+      },
+      {
+        "q": "Where do I apply?",
+        "a": "Use the Apply Now button on the job page. It leads to the company's official careers page."
+      }
     ]
   }
 ]
