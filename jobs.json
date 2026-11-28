@@ -2,6 +2,65 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "sphinxhire-data-analyst-fresher-hyderabad",
+      "company": "SphinxHire",
+      "role": "Data Analyst (Fresher)",
+      "tags": [
+        "Data Analyst",
+        "Fresher"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "2024, 2025 and 2026 graduates",
+      "eligibility": "Graduates in any field (B.Tech, B.E., B.Sc, B.Com, BCA, BBA, M.Sc, MBA or similar) passing out in 2024, 2025 or 2026",
+      "experience": "0 - 1 year",
+      "location": "Hyderabad, Telangana",
+      "workMode": "Work from office",
+      "salary": "8 LPA (Rs 8 lakh per year)",
+      "skills": [
+        "SQL",
+        "Excel",
+        "Google Sheets",
+        "Python",
+        "Power BI",
+        "Statistics",
+        "Data Visualisation"
+      ],
+      "website": "sphinxhireai.com",
+      "postedOn": "2026-10-22",
+      "applyLink": "https://ats.sphinxhireai.com/careers/sphinxhire/jobs/1-data-analyst-fresher",
+      "summary": "SphinxHire is hiring a Data Analyst (Fresher) in Hyderabad. 2024-2026 graduates of any stream can apply. Salary 8 LPA, work from office. SQL and Excel needed.",
+      "description": [
+        "SphinxHire, an AI recruitment company based in Hyderabad, is hiring a Data Analyst (Fresher) for its full-time, work-from-office team. The company builds an applicant tracking system that helps employers post jobs, screen applicants with AI and hire faster. The role offers a salary of 8 LPA and is open to graduates from 2024, 2025 and 2026 batches.",
+        "In this role you will work with the founders, product and sales teams to turn hiring data into clear answers, such as which jobs attract the best candidates, how long hiring takes, where applicants come from and how well the AI screening works. Day to day, you will collect and clean data, write SQL queries, build reports and dashboards in Excel, Google Sheets, Looker Studio or Power BI, track key hiring numbers and prepare weekly and monthly reports for the leadership team.",
+        "Graduates from any field can apply. You need good working knowledge of Excel or Google Sheets, basic SQL (SELECT, WHERE, GROUP BY and JOINs), basic statistics and clear English. Python, Power BI or Tableau, and a data project or Kaggle notebook are good to have but not required. The company promises structured training in SQL, dashboards and AI tools for the first three months, direct mentoring from the founders and a path to Senior Data Analyst."
+      ],
+      "responsibilities": [
+        "Collect, clean and organise data from the hiring platform, job boards and internal tools.",
+        "Write SQL queries to answer questions from the product, sales and customer teams.",
+        "Build and maintain reports and dashboards in Excel, Google Sheets, Looker Studio or Power BI.",
+        "Track key hiring numbers such as applicants per job, time to hire, source of hire and offer acceptance.",
+        "Study how AI screening scores match real hiring outcomes and help improve them.",
+        "Spot trends and unusual patterns and explain them in plain language.",
+        "Prepare short weekly and monthly reports for the leadership team.",
+        "Help customers understand their hiring reports, and keep data accurate and documented."
+      ],
+      "requirements": [
+        "Graduate in any field, passing out in 2024, 2025 or 2026.",
+        "Good working knowledge of Excel or Google Sheets: formulas, pivot tables, VLOOKUP or XLOOKUP and charts.",
+        "Basic SQL: SELECT, WHERE, GROUP BY and JOINs.",
+        "Basic understanding of statistics: averages, percentages, distributions and simple trends.",
+        "Clear written and spoken English, and the ability to explain numbers to non-technical people.",
+        "Good to have: Python (pandas, NumPy, Matplotlib), Power BI, Tableau or Looker Studio, and a data project or Kaggle notebook."
+      ],
+      "selectionProcess": [
+        "Apply online and upload your resume; applications are screened by AI.",
+        "Shortlisted profiles are reviewed personally by the SphinxHire team.",
+        "Short online assessment.",
+        "Interviews."
+      ],
+      "aboutCompany": "SphinxHire is an AI recruitment company in Hyderabad. Its applicant tracking system helps companies post jobs, screen every applicant with AI the moment they apply, and hire faster and more fairly."
+    },
+    {
       "id": "ibm-system-support-representative-hyderabad-pune-gurugram-chennai-noida-bengaluru-delhi",
       "company": "IBM",
       "role": "System Support Representative",
