@@ -2,6 +2,58 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "perkinelmer-data-analyst-india",
+      "company": "PerkinElmer",
+      "role": "Data Analyst (OneSource)",
+      "jobId": "REQ-058949",
+      "tags": [
+        "Data Analyst",
+        "Experienced"
+      ],
+      "employmentType": "FULL_TIME",
+      "batch": "Experienced hiring (not a fresher role)",
+      "eligibility": "Graduates with proven working experience as a Data Analyst or Business Data Analyst; very good English (B2/C1 level)",
+      "experience": "Proven experience required (exact years not stated)",
+      "location": "India",
+      "workMode": "Not specified by the company",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "SQL",
+        "Power BI",
+        "ETL",
+        "Data Cleaning",
+        "SAP",
+        "Reporting"
+      ],
+      "website": "perkinelmer.com",
+      "postedOn": "2026-11-28",
+      "applyLink": "https://jobs.perkinelmer.com/job/-/-/43930/103723030080",
+      "summary": "PerkinElmer is hiring a OneSource Data Analyst in India. SQL, ETL, reporting and Power BI skills needed; proven data analyst experience required.",
+      "description": [
+        "PerkinElmer is hiring a OneSource Data Analyst (job ID REQ-058949) in India. The job is a regular, full-time position. The company wants a data analyst who can make sure customer and PerkinElmer data is complete, accurate and easy to access. The posting does not name a city or the exact years of experience, so check these on the official page before you apply.",
+        "As a Data Analyst you will work with other data professionals to extract data, build reports from your findings and track key performance indicators (KPIs) to judge whether business initiatives are working. You will interpret data with statistical techniques, collect data from primary and secondary sources, maintain databases and data systems, find trends and patterns in complex data sets, and clean data by checking reports and correcting code problems. You will also work with management to set priorities and look for ways to improve processes.",
+        "The basic requirements are knowledge of data models, data mining, segmentation and data cleaning, experience with reporting tools, databases (SQL) and ETL frameworks, strong analytical skills and very good English at B2/C1 level. The company prefers candidates with proven experience as a Data Analyst or Business Data Analyst, experience with Power BI or similar visualisation software, SAP or other ERP systems, and previous work in a service organisation. This is not a fresher role, but it is a good target if you are building SQL, Power BI and ETL skills."
+      ],
+      "responsibilities": [
+        "Interpret data, analyse results using statistical techniques and provide ongoing reports.",
+        "Use data collection systems, analytics and other methods that improve statistical efficiency and quality.",
+        "Acquire data from primary or secondary sources and maintain databases and data systems.",
+        "Identify, analyse and interpret trends or patterns in complex data sets.",
+        "Filter and clean data by reviewing reports and performance indicators, and correct code problems.",
+        "Work with management to prioritise business and information needs.",
+        "Find and define new process improvement opportunities."
+      ],
+      "requirements": [
+        "Technical knowledge of data models, data mining, segmentation techniques and data cleaning.",
+        "Experience with reporting packages, databases (SQL etc.) and ETL frameworks.",
+        "Strong analytical skills and attention to detail and accuracy.",
+        "Skilled at queries, report writing and presenting findings.",
+        "Very good English, minimum B2/C1 level (written and spoken).",
+        "Preferred: proven experience as a Data Analyst or Business Data Analyst, Power BI, SAP or similar ERP, ETL tools, and service organisation experience."
+      ],
+      "aboutCompany": "PerkinElmer is a global company in the life sciences and diagnostics industry. This role supports its OneSource data work, which keeps customer and company data complete, accurate and accessible."
+    },
+    {
       "id": "sphinxhire-data-analyst-fresher-hyderabad",
       "company": "SphinxHire",
       "role": "Data Analyst (Fresher)",
