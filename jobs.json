@@ -2,6 +2,58 @@
   "_readme": "To add a job, paste a new object into the 'jobs' array. 'id' must be a unique slug (lowercase, hyphens). Dates use YYYY-MM-DD and lastDate is optional. The company logo is picked up automatically from the apply link; see README.md for the optional 'website' and 'logo' fields.",
   "jobs": [
     {
+      "id": "amazon-sde-i-intern-2027-bengaluru-chennai-hyderabad-delhi-mumbai-pune",
+      "company": "Amazon",
+      "role": "SDE I Intern (2027 Batch)",
+      "jobId": "10541345",
+      "tags": [
+        "Internship",
+        "Software Developer",
+        "Fresher"
+      ],
+      "employmentType": "INTERN",
+      "batch": "2027 graduates (currently enrolled in a Bachelor's or Master's degree)",
+      "eligibility": "Currently enrolled in a Bachelor's or Master's degree in Computer Science, Computer Engineering or a related field, graduating in 2027",
+      "experience": "Students and freshers (no experience required)",
+      "location": "Bengaluru, Chennai, Hyderabad, Delhi, Mumbai and Pune",
+      "workMode": "In-person (on-site)",
+      "salary": "Not disclosed by the company",
+      "skills": [
+        "Data Structures",
+        "Algorithms",
+        "Object-Oriented Design",
+        "Python",
+        "Java",
+        "C/C++",
+        "Operating Systems"
+      ],
+      "website": "amazon.com",
+      "postedOn": "2026-11-28",
+      "applyLink": "https://www.amazon.jobs/en/jobs/10541345/sde-i-intern-amazon-university-talent-acquisition",
+      "summary": "Amazon is hiring SDE I Interns for a 6-month in-person internship in India (2027 graduates, CS or related degree). Starts January to June 2027.",
+      "description": [
+        "Amazon is hiring Software Development Engineer (SDE I) Interns for a 6-month, in-person internship in India. The role is open to students graduating in 2027 who are currently enrolled in a Bachelor's or Master's degree. Your application is considered for all Amazon locations in India, including Bengaluru, Chennai, Hyderabad, Delhi, Mumbai and Pune.",
+        "The internship is full-time, 40 hours a week, for 24 to 26 consecutive weeks, with start dates between January and June 2027. Interns are matched to a manager and a mentor and write real software on projects that matter to customers, in areas such as distributed systems, data mining, automation, optimisation, scalability and security. You will work in an agile team to design and build services in a large distributed computing environment. Amazon asks interns to have no clash with classes, academic projects or other internships during this period, and selected candidates must submit a signed declaration of availability from their university.",
+        "The basic requirements are knowledge of computer science fundamentals (object-oriented design, operating systems, algorithms, data structures and complexity analysis) and a programming language such as C/C++, Python, Java or Perl. A previous technical internship, experience with distributed systems or relational databases, and the ability to explain technical problems clearly are preferred. To prepare, practise data structures and algorithms problems and be ready to explain your project work."
+      ],
+      "responsibilities": [
+        "Work with experienced engineers to design and build new products and services.",
+        "Design and build technologies in a large distributed computing environment.",
+        "Create solutions that run predictions on distributed systems at scale.",
+        "Build distributed storage, index and query systems that are scalable, fault-tolerant, low cost and easy to use.",
+        "Design and code the right solutions starting from broadly defined problems.",
+        "Work in an agile environment to deliver high-quality software."
+      ],
+      "requirements": [
+        "Currently enrolled in a Bachelor's or Master's degree in Computer Science, Computer Engineering or a related field, with graduation year 2027.",
+        "Knowledge of computer science fundamentals: object-oriented design, operating systems, algorithms, data structures and complexity analysis.",
+        "Knowledge of a programming language such as C/C++, Python, Java or Perl.",
+        "Available full-time for the whole internship (24 to 26 weeks), with a signed university declaration.",
+        "Preferred: previous technical internship, experience with distributed systems and relational databases, and optimisation mathematics."
+      ],
+      "aboutCompany": "Amazon is one of the world's largest technology companies, known for its customer focus, Amazon Web Services (AWS) and large-scale online retail. Its interns work on real software projects with guidance from experienced engineers."
+    },
+    {
       "id": "perkinelmer-data-analyst-india",
       "company": "PerkinElmer",
       "role": "Data Analyst (OneSource)",
